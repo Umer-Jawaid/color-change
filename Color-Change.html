@@ -1,0 +1,35 @@
+<html>
+    <head>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+         <title>Changing Color</title>
+        
+       
+       <script>
+
+                $(document).ready(function(){ 
+               
+                $(".change").click(function(){
+                
+                 $(".input").change();
+                
+                
+                console.log("here iam")
+         
+                 $("body").css("background-color", $(".input").val()) 
+                                         })
+                                         });
+        </script>
+  
+</head>
+        
+    
+    
+    <body>
+            <h1>Write Your color to Show </h1>
+           
+        <input class="input" type="text">
+           <button class="change" > Show Color </button>
+        
+        </body>
+</html>
